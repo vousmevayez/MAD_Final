@@ -12,7 +12,7 @@ export default function Pages() {
       style={{
         display: "flex",
         justifyContent: "space-around",
-        marginBottom: "1.5vh"
+        marginBottom: "1.5vh",
       }}
     >
       <button

@@ -3,7 +3,6 @@ import { setSearchedShow } from "../redux/reducer";
 import { useDispatch } from "react-redux";
 import { Navbar, Nav, NavDropdown, Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Register from "./register.jsx";
 
 export default function NavigationBar() {
   const dispatch = useDispatch();

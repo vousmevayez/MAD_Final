@@ -1,14 +1,14 @@
 import React from "react";
-import "./styles.css";
-import Home from "../component/Home";
+import "./App.css";
+import Home from "./component/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ShowDetails from "../component/ShowDetails";
-import NavigationBar from "../component/Navbar";
-import ShowList from "../component/showList";
+import ShowDetails from "./component/ShowDetails";
+import NavigationBar from "./component/Navbar";
+import ShowList from "./component/showList";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { setLoading, setSortList } from "../redux/reducer";
-import Loading from "../component/Loading";
+import { setLoading, setSortList } from "./redux/reducer";
+import Loading from "./component/Loading";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,7 +26,7 @@ function App() {
     Thriller,
     searchedShow,
     showList,
-    page
+    page,
   } = useSelector((state) => state.show);
   useEffect(() => {
     dispatch(setLoading(true));

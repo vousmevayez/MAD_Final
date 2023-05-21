@@ -17,7 +17,7 @@ const initialState = {
   page: 0,
   Legal: [],
   Medical: [],
-  Romance: []
+  Romance: [],
 };
 export const reducerSlice = createSlice({
   name: "reducer",
@@ -74,8 +74,8 @@ export const reducerSlice = createSlice({
     },
     setPage: (state, action) => {
       state.page = action.payload;
-    }
-  }
+    },
+  },
 });
 
 export const {
@@ -86,6 +86,6 @@ export const {
   setCurrentShow,
   setCrewData,
   setSearchedShow,
-  setPage
+  setPage,
 } = reducerSlice.actions;
 export default reducerSlice.reducer;

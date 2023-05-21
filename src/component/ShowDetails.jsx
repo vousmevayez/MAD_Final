@@ -3,8 +3,7 @@ import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import Home from "./Home";
 import YoutubePortal from "./YoutubePortal";
-import "../src/styles.css";
-// import "../App.css";
+import "../App.css";
 // import Tooltip from "tooltip";
 
 export default function ShowDetails() {
@@ -12,15 +11,8 @@ export default function ShowDetails() {
   const [isOpen, setOpen] = useState(false);
   const [videoId, setVideoId] = useState("");
   const { currentShow, api, crewData } = useSelector((state) => state.show);
-  const {
-    name,
-    status,
-    image,
-    language,
-    network,
-    genres,
-    rating
-  } = currentShow;
+  const { name, status, image, language, network, genres, rating } =
+    currentShow;
   const [showData, setShowData] = useState("");
   console.log("showDetails");
   useEffect(() => {

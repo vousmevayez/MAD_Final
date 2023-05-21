@@ -19,7 +19,7 @@ export default function FeaturedShows() {
     slidesToScroll: 1,
     swipeToSlide: true,
     // scale: 0.4,
-    arrows: false
+    arrows: false,
   };
   return (
     <>
@@ -33,7 +33,7 @@ export default function FeaturedShows() {
                     style={{
                       width: "19vw",
                       height: "19vw",
-                      objectFit: "fill "
+                      objectFit: "fill ",
                     }}
                     alt="img"
                     src={e ? array[index].image.original : ""}
